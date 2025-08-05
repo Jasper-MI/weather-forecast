@@ -1,0 +1,53 @@
+<div style="
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+">
+
+  <!-- Temperature Chart -->
+  <ngx-charts-line-chart
+    style="
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    "
+
+    [view]="[600, 200]"
+    [scheme]="'flame'"
+    [results]="temperatureData"
+    [gradient]="false"
+    [xAxis]="true"
+    [yAxis]="true"
+    [yScaleMin]="yScaleMin"
+    [yScaleMax]="yScaleMax"
+    [legend]="false"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxisLabel]="'Tag'"
+    [yAxisLabel]="'Temperatur (°C)'">
+  </ngx-charts-line-chart>
+  
+  <!-- Rain Chart -->
+  <ngx-charts-bar-vertical
+    style="
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    "
+
+    [view]="[600, 200]"
+    [scheme]="'aqua'"
+    [results]="rainData"
+    [gradient]="false"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="false"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxisLabel]="'Tag'"
+    [yAxisLabel]="'Rain (mm)'">
+  </ngx-charts-bar-vertical>
+</div>

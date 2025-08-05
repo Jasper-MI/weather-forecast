@@ -1,0 +1,55 @@
+<div
+    style="
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 93.5%;
+        
+    "
+>
+
+    <table class="table table-striped-columns caption-top">
+        <caption style="
+            font-size: large;
+            color: #000;
+            ">
+        Weather for the next 7 days
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Tag 1</th>
+                <th scope="col">Tag 2</th>
+                <th scope="col">Tag 3</th>
+                <th scope="col">Tag 4</th>
+                <th scope="col">Tag 5</th>
+                <th scope="col">Tag 6</th>
+                <th scope="col">Tag 7</th>
+            </tr>
+        </thead>
+        <tbody id="TableUsersBody">
+            <tr>
+                Temperature (°C)
+                <td id="tempDay1">{{ averageTemperatureArray[0] }} °C</td>
+                <td id="tempDay2">{{ averageTemperatureArray[1] }} °C</td>
+                <td id="tempDay3">{{ averageTemperatureArray[2] }} °C</td>
+                <td id="tempDay4">{{ averageTemperatureArray[3] }} °C</td>
+                <td id="tempDay5">{{ averageTemperatureArray[4] }} °C</td>
+                <td id="tempDay6">{{ averageTemperatureArray[5] }} °C</td>
+                <td id="tempDay7">{{ averageTemperatureArray[6] }} °C</td>
+            </tr>
+            <tr>
+                Rain (mm)
+                <td id="rainDay1">{{ averageRainArray[0] }} mm</td>
+                <td id="rainDay2">{{ averageRainArray[1] }} mm</td>
+                <td id="rainDay3">{{ averageRainArray[2] }} mm</td>
+                <td id="rainDay4">{{ averageRainArray[3] }} mm</td>
+                <td id="rainDay5">{{ averageRainArray[4] }} mm</td>
+                <td id="rainDay6">{{ averageRainArray[5] }} mm</td>
+                <td id="rainDay7">{{ averageRainArray[6] }} mm</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,30 @@
+
+main {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+    width: 75%;
+    height: 100%;
+    background-color: #9DCAEB;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#iconPlusDetails {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: #B3EBF2;
+}
+
+#tablePlusChart {
+    padding: 10px;
+}
+

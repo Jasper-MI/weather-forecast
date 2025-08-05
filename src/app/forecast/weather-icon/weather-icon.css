@@ -1,0 +1,13 @@
+:host {
+    display: block;
+    
+}
+
+
+i::before {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+}

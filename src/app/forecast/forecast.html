@@ -1,0 +1,26 @@
+<main>
+    <div id="toastMessage" class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="display: {{toastStyle}}; background-color: rgb(197, 71, 71);">
+        <div id="toastMessageText" class="toast-body">
+            No connection!
+        </div>
+    </div>
+
+    <div id="iconPlusDetails">
+
+        <app-weather-icon [rainAmount]="rainAmount" [cloudCoverage]="cloudCoverage"
+            [currentWindSpeed]="currentWindSpeed">
+        </app-weather-icon>
+
+        <app-weather-details [currentTemperature]="currentTemperature" [currentWindSpeed]="currentWindSpeed">
+        </app-weather-details>
+    </div>
+
+    <div id="tablePlusChart">
+        <app-weather-table [averageTemperatureArray]="averageTemperatureArray" [averageRainArray]="averageRainArray">
+        </app-weather-table>
+
+        <app-weather-chart></app-weather-chart>
+
+    </div>
+
+</main>
